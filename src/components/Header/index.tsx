@@ -1,5 +1,7 @@
 import { Phone, Envelope, Clock } from "phosphor-react";
-import { HeadContainer, TopBar } from "./styles";
+import { HeadContainer, TopBar, NavigationContainer } from "./styles";
+
+import EmcapLogo from "../../assets/logo-emcap.png";
 
 export function Header() {
   return (
@@ -18,6 +20,16 @@ export function Header() {
           8:00 am - 17:00 pm
         </span>
       </TopBar>
+      <NavigationContainer>
+        <h2>Emcap JR</h2>
+        <nav>
+          <a href="#">Home</a>
+          <a href="#">Sobre</a>
+          <a href="#">Vantagens</a>
+          <a href="#">Serviços</a>
+          <a href="#">Consulte um especialista</a>
+        </nav>
+      </NavigationContainer>
     </HeadContainer>
   );
 }
