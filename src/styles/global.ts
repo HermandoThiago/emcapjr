@@ -9,6 +9,10 @@ export const GlobalStyle = createGlobalStyle`
         font-family: 'Inter', sans-serif;
     }
 
+    body {
+        background-color: ${(props) => props.theme["blue-900"]}
+    }
+
     :focus {
         outline: 0;
     }

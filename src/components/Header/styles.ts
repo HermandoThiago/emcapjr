@@ -6,6 +6,8 @@ export const HeadContainer = styled.header`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  position: fixed;
 `;
 
 export const TopBar = styled.div`

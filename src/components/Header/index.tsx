@@ -1,8 +1,6 @@
 import { Phone, Envelope, Clock } from "phosphor-react";
 import { HeadContainer, TopBar, NavigationContainer } from "./styles";
 
-import EmcapLogo from "../../assets/logo-emcap.png";
-
 export function Header() {
   return (
     <HeadContainer>
