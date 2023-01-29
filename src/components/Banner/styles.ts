@@ -7,6 +7,6 @@ export const BannerContainer = styled.div`
   justify-content: center;
 
   img {
-    max-width: 80rem;
+    max-width: 65rem;
   }
 `;
