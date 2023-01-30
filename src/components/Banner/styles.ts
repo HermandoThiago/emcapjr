@@ -8,5 +8,6 @@ export const BannerContainer = styled.div`
 
   img {
     max-width: 65rem;
+    width: 100%;
   }
 `;

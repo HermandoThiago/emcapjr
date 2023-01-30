@@ -8,6 +8,7 @@ export const HeadContainer = styled.header`
   align-items: center;
 
   position: fixed;
+  z-index: 5;
 `;
 
 export const TopBar = styled.div`
