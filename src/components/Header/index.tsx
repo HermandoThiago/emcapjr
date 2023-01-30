@@ -22,7 +22,7 @@ export function Header() {
         <h2>Emcap JR</h2>
         <nav>
           <a href="#">Home</a>
-          <a href="#">Sobre</a>
+          <a href="#about">Sobre</a>
           <a href="#">Vantagens</a>
           <a href="#">Serviços</a>
           <a href="#">Consulte um especialista</a>

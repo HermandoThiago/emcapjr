@@ -8,6 +8,10 @@ export const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
         font-family: 'Inter', sans-serif;
     }
+    
+    html {
+        scroll-behavior: smooth;
+    }
 
     body {
         background-color: ${(props) => props.theme["blue-900"]}

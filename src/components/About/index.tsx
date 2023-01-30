@@ -1,8 +1,15 @@
-import { AboutContainer, Content, ImagePresentation } from "./styles";
+import {
+  AboutContainer,
+  Content,
+  ImagePresentation,
+  Circle,
+  Rectangle,
+} from "./styles";
+import teamPhoto from "../../assets/team.png";
 
 export function About() {
   return (
-    <AboutContainer color="#fff">
+    <AboutContainer id="about">
       <Content>
         <p>Quem somos</p>
         <h3>
@@ -21,7 +28,14 @@ export function About() {
         </p>
         <button>Entrar em contato</button>
       </Content>
-      <ImagePresentation></ImagePresentation>
+      <ImagePresentation>
+        <Circle />
+        <Rectangle />
+        <img
+          src={teamPhoto}
+          alt="Pessoas reunidas na mesa, conversando sobre negócios"
+        />
+      </ImagePresentation>
     </AboutContainer>
   );
 }
