@@ -23,8 +23,8 @@ export function Header() {
         <nav>
           <a href="#">Home</a>
           <a href="#about">Sobre</a>
-          <a href="#">Vantagens</a>
-          <a href="#">Serviços</a>
+          <a href="#benefits">Vantagens</a>
+          <a href="#services">Serviços</a>
           <a href="#">Consulte um especialista</a>
         </nav>
       </NavigationContainer>
