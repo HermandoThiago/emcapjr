@@ -3,12 +3,16 @@ import styled from "styled-components";
 export const ServicesContainer = styled.section`
   width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+
   padding: 7.5rem 2.8rem;
   color: ${(props) => props.theme.white};
   background-color: ${(props) => props.theme["blue-600"]};
+
+  #container {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
 
   h2 {
     font-size: 2.2rem;
@@ -23,6 +27,19 @@ export const ServicesContainer = styled.section`
   p:nth-child(3) {
     margin-bottom: 1.4rem;
   }
+
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    text-align: center;
+    padding: 7.5rem 1.2rem;
+
+    h2 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
 `;
 
 export const ServicesWrapper = styled.div`
@@ -32,6 +49,11 @@ export const ServicesWrapper = styled.div`
   justify-content: space-around;
   flex-direction: row;
   padding: 0.8rem;
+
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    flex-direction: column;
+    padding: 0;
+  }
 `;
 
 export const ServicesCard = styled.div`
@@ -59,5 +81,10 @@ export const ServicesCard = styled.div`
     color: ${(props) => props.theme.white};
     padding: 0.4rem 0.8rem;
     border-radius: 8px;
+  }
+
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    width: 100%;
+    margin-bottom: 0.8rem;
   }
 `;

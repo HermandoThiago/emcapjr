@@ -4,4 +4,13 @@ export const defaultTheme = {
   "blue-900": "#000512",
   "blue-600": "#04162E",
   "yellow-300": "#E9BC5D",
+
+  breakpoints: {
+    smallMobile: "320px",
+    mobile: "520px",
+    tablet: "928px",
+    smallDesktop: "1024px",
+    desktop: "1440px",
+    largeDesktop: "1920px",
+  },
 };

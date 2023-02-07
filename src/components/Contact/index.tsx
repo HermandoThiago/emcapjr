@@ -36,7 +36,7 @@ export function Contact() {
   return (
     <ContactContainer id="contact">
       <Container>
-        <h2>Entre em contato com a gente</h2>
+        <h2>Entre em contato</h2>
         <ContactForm onSubmit={handleSubmit(handleSendEmail)} action="">
           <div>
             <label htmlFor="company">Nome da empresa</label>

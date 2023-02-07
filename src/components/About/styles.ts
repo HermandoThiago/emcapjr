@@ -5,12 +5,23 @@ export const AboutContainer = styled.section`
   padding: 2.8rem;
 
   display: flex;
-  flex-direction: row;
-  align-items: center;
   flex-wrap: wrap;
 
   color: ${(props) => props.theme.white};
   background: ${(props) => props.theme["blue-600"]};
+
+  #container {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    #container {
+      flex-direction: column;
+    }
+
+    padding: 2.8rem 1.2rem;
+  }
 `;
 
 export const Content = styled.div`
@@ -44,6 +55,12 @@ export const Content = styled.div`
     color: ${(props) => props.theme.white};
     font-weight: 500;
   }
+
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 0.8rem;
+  }
 `;
 
 export const ImagePresentation = styled.div`
@@ -57,6 +74,11 @@ export const ImagePresentation = styled.div`
   img {
     max-width: 100%;
     z-index: 2;
+  }
+
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    width: 100%;
+    padding: 0;
   }
 `;
 
@@ -74,6 +96,10 @@ export const Circle = styled(Form)`
 
   left: 40px;
   top: 35px;
+
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    display: none;
+  }
 `;
 
 export const Rectangle = styled(Form)`
@@ -84,4 +110,8 @@ export const Rectangle = styled(Form)`
 
   right: 40px;
   bottom: 35px;
+
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    display: none;
+  }
 `;

@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const ContactContainer = styled.section`
   width: 100%;
   display: flex;
+  text-align: center;
 
   padding: 7.5rem 0;
   color: ${(props) => props.theme.white};
@@ -11,6 +12,10 @@ export const ContactContainer = styled.section`
     align-items: center;
     justify-content: center;
     flex-direction: column;
+  }
+
+  h2 {
+    font-size: 2.2rem;
   }
 `;
 
@@ -30,6 +35,7 @@ export const ContactForm = styled.form`
       margin-bottom: 0.8rem;
       color: #eea918;
       font-weight: 500;
+      text-align: left;
     }
 
     input,
