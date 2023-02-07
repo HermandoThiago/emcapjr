@@ -5,8 +5,9 @@ import { Benefits } from "../../components/Benefits";
 import { Services } from "../../components/Services";
 import { Contact } from "../../components/Contact";
 import { ModalProvider } from "../../contexts/Modal";
-import { HomeContainer } from "./styles";
 import { Modal } from "../../components/Modal";
+import { Footer } from "../../components/Footer";
+import { HomeContainer } from "./styles";
 
 export function Home() {
   return (
@@ -19,6 +20,7 @@ export function Home() {
         <Benefits />
         <Services />
         <Contact />
+        <Footer />
       </HomeContainer>
     </ModalProvider>
   );
