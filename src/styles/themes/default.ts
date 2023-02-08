@@ -1,4 +1,8 @@
 export const defaultTheme = {
+  colors: {
+    neutral: "#54595f",
+  },
+
   white: "#FFF",
 
   "blue-900": "#000512",

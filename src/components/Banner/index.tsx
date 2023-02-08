@@ -1,10 +1,18 @@
-import emcapBanner from "../../assets/banner-emcap.png";
+import { ArrowRight } from "phosphor-react";
 import { BannerContainer } from "./styles";
 
 export function Banner() {
   return (
     <BannerContainer>
-      <img src={emcapBanner} alt="" />
+      <p>Consultoria contábil e Financeira</p>
+      <h1>Simplique a gestão financeira e contábil da sua empresa</h1>
+      <p>
+        Atuamos desde 2008 com prestação de serviços relacionados a consultoria
+        financeira e Contábil.
+      </p>
+      <a href="#contact">
+        Entrar em contato <ArrowRight size={22} />
+      </a>
     </BannerContainer>
   );
 }

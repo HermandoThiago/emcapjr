@@ -3,14 +3,11 @@ import styled from "styled-components";
 export const HeadContainer = styled.header`
   max-width: 100%;
   width: 100%;
-  position: fixed;
+  position: sticky;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   z-index: 5;
-
-  #container {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
 
   background: ${(props) => props.theme["blue-900"]};
 

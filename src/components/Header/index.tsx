@@ -5,7 +5,6 @@ import {
   NavigationContainer,
   BurguerMenu,
 } from "./styles";
-import { Container } from "../Container";
 import { useModalContext } from "../../contexts/Modal";
 import { MobileDrawer } from "../MobileDrawer";
 
@@ -16,35 +15,33 @@ export function Header() {
 
   return (
     <HeadContainer>
-      <Container>
-        <TopBar>
-          <span>
-            <Phone size={22} />
-            (84) 99868-1388
-          </span>
-          <span>
-            <Envelope size={22} />
-            emcap@gmail.com
-          </span>
-          <span>
-            <Clock size={22} />
-            8:00 am - 17:00 pm
-          </span>
-        </TopBar>
-        <NavigationContainer>
-          <h2>Emcap JR</h2>
-          <nav>
-            <a href="#">Home</a>
-            <a href="#about">Sobre</a>
-            <a href="#benefits">Vantagens</a>
-            <a href="#services">Serviços</a>
-            <a href="#">Consulte um especialista</a>
-          </nav>
-          <BurguerMenu>
-            <List size={22} onClick={openDrawerMobile} />
-          </BurguerMenu>
-        </NavigationContainer>
-      </Container>
+      <TopBar>
+        <span>
+          <Phone size={22} />
+          (84) 99868-1388
+        </span>
+        <span>
+          <Envelope size={22} />
+          emcap@gmail.com
+        </span>
+        <span>
+          <Clock size={22} />
+          8:00 am - 17:00 pm
+        </span>
+      </TopBar>
+      <NavigationContainer>
+        <h2>Emcap JR</h2>
+        <nav>
+          <a href="#">Home</a>
+          <a href="#about">Sobre</a>
+          <a href="#benefits">Vantagens</a>
+          <a href="#services">Serviços</a>
+          <a href="#contact">Consulte um especialista</a>
+        </nav>
+        <BurguerMenu>
+          <List size={22} onClick={openDrawerMobile} />
+        </BurguerMenu>
+      </NavigationContainer>
     </HeadContainer>
   );
 }

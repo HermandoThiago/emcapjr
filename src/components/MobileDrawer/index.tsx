@@ -9,11 +9,21 @@ export function MobileDrawer() {
     <Drawer>
       <X size={32} onClick={closeDrawer} />
       <nav>
-        <a href="#">Home</a>
-        <a href="#about">Sobre</a>
-        <a href="#benefits">Vantagens</a>
-        <a href="#services">Serviços</a>
-        <a href="#contact">Consulte um especialista</a>
+        <a href="#" onClick={closeDrawer}>
+          Home
+        </a>
+        <a href="#about" onClick={closeDrawer}>
+          Sobre
+        </a>
+        <a href="#benefits" onClick={closeDrawer}>
+          Vantagens
+        </a>
+        <a href="#services" onClick={closeDrawer}>
+          Serviços
+        </a>
+        <a href="#contact" onClick={closeDrawer}>
+          Consulte um especialista
+        </a>
       </nav>
     </Drawer>
   );
