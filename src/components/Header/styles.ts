@@ -4,12 +4,17 @@ export const HeadContainer = styled.header`
   max-width: 100%;
   width: 100%;
   position: sticky;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  z-index: 5;
+  top: 0px;
+  z-index: 10;
 
-  background: ${(props) => props.theme["blue-900"]};
+  background: ${(props) => props.theme.white};
+
+  #container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+  }
 
   @media screen and (max-width: ${(props) => props.theme.breakpoints.mobile}) {
     position: static;
@@ -23,9 +28,9 @@ export const NavigationContainer = styled.div`
   align-items: center;
   flex-wrap: wrap;
 
-  background: ${(props) => props.theme["blue-600"]};
-  padding: 1.4rem 0.8rem;
-  color: ${(props) => props.theme.white};
+  background: ${(props) => props.theme.white};
+  padding: 1.4rem 0;
+  color: ${(props) => props.theme["blue-600"]};
 
   h2 {
     cursor: pointer;
@@ -40,11 +45,12 @@ export const NavigationContainer = styled.div`
     gap: 1.2rem;
 
     a {
-      color: ${(props) => props.theme.white};
-      font-weight: 300;
+      color: ${(props) => props.theme.colors.neutral};
+      font-weight: 400;
     }
 
     a:last-child {
+      color: ${(props) => props.theme.white};
       background: #eea918;
       border-radius: 5px;
       padding: 0.4rem 0.8rem;
