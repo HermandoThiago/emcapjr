@@ -3,8 +3,8 @@ import styled from "styled-components";
 export const FooterContainer = styled.footer`
   width: 100%;
   padding: 4.2rem 2.8rem;
-  background: ${(props) => props.theme["blue-600"]};
-  color: ${(props) => props.theme.white};
+  background: ${(props) => props.theme.white};
+  color: ${(props) => props.theme.colors.neutral};
 `;
 
 export const FooterWrapper = styled.div`
@@ -49,7 +49,7 @@ export const SocialIcons = styled.div`
   gap: 0.6rem;
 
   a {
-    color: ${(props) => props.theme.white};
+    color: ${(props) => props.theme["blue-600"]};
   }
 `;
 
@@ -103,6 +103,6 @@ export const InfoContainer = styled.div`
   font-size: 1rem;
   font-weight: 300;
   text-align: center;
-  background: ${(props) => props.theme.white};
-  color: ${(props) => props.theme["blue-600"]};
+  background: ${(props) => props.theme["blue-600"]};
+  color: ${(props) => props.theme.white};
 `;

@@ -4,12 +4,14 @@ export const BenefistContainer = styled.section`
   width: 100%;
 
   padding: 7.5rem 2.8rem;
-  color: ${(props) => props.theme.white};
+  background: #030f20;
+  color: ${(props) => props.theme.colors.neutral};
 
   h2 {
     font-size: 2.2rem;
     margin-bottom: 3.2rem;
     text-align: center;
+    color: #eea918;
   }
 
   #container {
@@ -42,7 +44,12 @@ export const BenefitsCard = styled.div`
   text-align: left;
   border-radius: 8px;
   cursor: pointer;
-  background: ${(props) => props.theme["blue-600"]};
+  background: ${(props) => props.theme.colors["gray-200"]};
+  transition: all 0.2s;
+
+  &:hover {
+    transform: translatey(-15px);
+  }
 
   svg {
     margin-bottom: 0.8rem;

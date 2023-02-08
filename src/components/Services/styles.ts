@@ -5,8 +5,8 @@ export const ServicesContainer = styled.section`
   display: flex;
 
   padding: 7.5rem 2.8rem;
-  color: ${(props) => props.theme.white};
-  background-color: ${(props) => props.theme["blue-600"]};
+  color: ${(props) => props.theme.colors.neutral};
+  background-color: ${(props) => props.theme.white};
 
   #container {
     align-items: center;
@@ -17,6 +17,7 @@ export const ServicesContainer = styled.section`
   h2 {
     font-size: 2.2rem;
     margin-bottom: 1.2rem;
+    color: #eea918;
   }
 
   p {
@@ -62,15 +63,20 @@ export const ServicesCard = styled.div`
   padding: 2.4rem 0.8rem;
   border-radius: 8px;
   cursor: pointer;
-  background-color: rgba(2, 34, 73, 0.3);
-  box-shadow: 5px 5px 20px rgb(2, 34, 73, 0.3);
+  background-color: ${(props) => props.theme.colors["gray-200"]};
+  box-shadow: 5px 5px 20px rgb(2, 34, 73, 0.1);
+  transition: all 0.2s;
+
+  &:hover {
+    transform: translatey(-15px);
+  }
 
   svg {
     margin-bottom: 0.8rem;
   }
 
   p {
-    color: #eea918;
+    color: ${(props) => props.theme.colors.neutral};
     margin-bottom: 1.8rem;
     font-weight: 700;
     font-size: 1.3rem;

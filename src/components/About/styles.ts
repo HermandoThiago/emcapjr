@@ -7,8 +7,8 @@ export const AboutContainer = styled.section`
   display: flex;
   flex-wrap: wrap;
 
-  color: ${(props) => props.theme.white};
-  background: ${(props) => props.theme["blue-600"]};
+  color: ${(props) => props.theme.colors.neutral};
+  background: ${(props) => props.theme.white};
 
   #container {
     flex-direction: row;
@@ -44,6 +44,7 @@ export const Content = styled.div`
 
   h3 {
     font-size: 1.8rem;
+    color: ${(props) => props.theme["blue-600"]};
     margin-bottom: 0.85rem;
   }
 

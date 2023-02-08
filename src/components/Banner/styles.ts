@@ -9,6 +9,7 @@ export const BannerContainer = styled.div`
   justify-content: center;
   padding: 12rem 2rem;
   position: relative;
+  text-align: center;
 
   &:before {
     content: "";
@@ -19,7 +20,7 @@ export const BannerContainer = styled.div`
     left: 0px;
     z-index: 2;
 
-    opacity: 0.1;
+    opacity: 0.2;
 
     background-image: url(${emcapBanner});
     background-repeat: no-repeat;
@@ -33,6 +34,7 @@ export const BannerContainer = styled.div`
   p {
     margin-bottom: 0.8rem;
     font-weight: 300;
+    z-index: 3;
   }
 
   p:first-child {
@@ -43,8 +45,10 @@ export const BannerContainer = styled.div`
   h1 {
     font-size: 2.4rem;
     font-weight: 700;
+    max-width: 700px;
     margin-bottom: 1.2rem;
     color: #eea918;
+    z-index: 3;
   }
 
   a {

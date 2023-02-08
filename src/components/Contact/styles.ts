@@ -6,6 +6,7 @@ export const ContactContainer = styled.section`
   text-align: center;
 
   padding: 7.5rem 0;
+  background: #030f20;
   color: ${(props) => props.theme.white};
 
   #container {
@@ -45,6 +46,7 @@ export const ContactForm = styled.form`
       border-radius: 4px;
       font-weight: 300;
       padding: 0.8rem 1.2rem;
+      background: ${(props) => props.theme.colors["gray-200"]};
     }
 
     input {
