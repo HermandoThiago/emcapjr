@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const AboutContainer = styled.section`
   width: 100%;
-  padding: 2.8rem;
+  padding: 7.5rem 2.8rem;
 
   display: flex;
   flex-wrap: wrap;

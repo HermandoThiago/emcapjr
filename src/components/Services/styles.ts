@@ -26,7 +26,7 @@ export const ServicesContainer = styled.section`
   }
 
   p:nth-child(3) {
-    margin-bottom: 1.4rem;
+    margin-bottom: 3.2rem;
   }
 
   @media screen and (max-width: ${(props) => props.theme.breakpoints.mobile}) {

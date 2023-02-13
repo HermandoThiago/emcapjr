@@ -30,13 +30,19 @@ export function Footer() {
               type and scrambled it to make a type specimen book.
             </p>
             <SocialIcons>
-              <a href="">
+              <a href="https://www.facebook.com/emcapjr" target="_blank">
                 <FacebookLogo size={30} />
               </a>
-              <a href="">
+              <a
+                href="https://www.instagram.com/emcapjr/?hl=pt"
+                target="_blank"
+              >
                 <InstagramLogo size={30} />
               </a>
-              <a href="">
+              <a
+                href="https://api.whatsapp.com/send?phone=5584996036572"
+                target="_blank"
+              >
                 <WhatsappLogo size={30} />
               </a>
             </SocialIcons>
@@ -55,11 +61,11 @@ export function Footer() {
             <ul>
               <li>
                 <Envelope size={20} />
-                hermando2013@gmail.com
+                emcapjr@gmail.com
               </li>
               <li>
                 <Phone size={20} />
-                (84) 99868-1388
+                (84) 99603-6572
               </li>
               <li>
                 <MapPin size={20} />

@@ -1,6 +1,7 @@
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as zod from "zod";
+import emailjs from "@emailjs/browser";
 import { Container } from "../Container";
 import { ContactContainer, ContactForm } from "./styles";
 
@@ -9,6 +10,7 @@ const contactFormSchema = zod.object({
   cpfOrCnpj: zod.string(),
   about: zod.string(),
   content: zod.string(),
+  email: zod.string(),
 });
 
 type ContactFormData = zod.infer<typeof contactFormSchema>;
@@ -30,6 +32,23 @@ export function Contact() {
   });
 
   function handleSendEmail(data: ContactFormData) {
+    let template = {
+      about: data.about,
+      company: data.company,
+      email: data.email,
+      cpfOrCnpj: data.cpfOrCnpj,
+      content: data.content,
+    };
+
+    emailjs.send("", "", template).then(
+      function (response) {
+        console.log("SUCCESS!", response.status, response.text);
+      },
+      function (error) {
+        console.log("FAILED...", error);
+      }
+    );
+
     reset();
   }
 
@@ -46,6 +65,16 @@ export function Contact() {
               required
               placeholder="Empresa"
               {...register("company")}
+            />
+          </div>
+          <div>
+            <label htmlFor="email">Email</label>
+            <input
+              id="email"
+              type="email"
+              required
+              placeholder="Email"
+              {...register("email")}
             />
           </div>
           <div>

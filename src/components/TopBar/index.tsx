@@ -8,11 +8,11 @@ export function TopBar() {
       <Container>
         <span>
           <Phone size={22} />
-          (84) 99868-1388
+          (84) 99603-6572
         </span>
         <span>
           <Envelope size={22} />
-          emcap@gmail.com
+          emcapjr@gmail.com
         </span>
         <span>
           <Clock size={22} />

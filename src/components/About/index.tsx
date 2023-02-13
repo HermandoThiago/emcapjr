@@ -5,7 +5,7 @@ import {
   Circle,
   Rectangle,
 } from "./styles";
-import teamPhoto from "../../assets/team.png";
+import emcap from "../../assets/logo-emcap.png";
 import { Container } from "../Container";
 
 export function About() {
@@ -32,12 +32,7 @@ export function About() {
           <button>Entrar em contato</button>
         </Content>
         <ImagePresentation>
-          <Circle />
-          <Rectangle />
-          <img
-            src={teamPhoto}
-            alt="Pessoas reunidas na mesa, conversando sobre negócios"
-          />
+          <img src={emcap} />
         </ImagePresentation>
       </Container>
     </AboutContainer>
