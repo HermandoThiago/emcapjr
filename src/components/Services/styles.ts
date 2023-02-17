@@ -93,5 +93,8 @@ export const ServicesCard = styled.div`
   @media screen and (max-width: ${(props) => props.theme.breakpoints.mobile}) {
     width: 100%;
     margin-bottom: 0.8rem;
+    &:hover {
+      transform: translatey(0);
+    }
   }
 `;

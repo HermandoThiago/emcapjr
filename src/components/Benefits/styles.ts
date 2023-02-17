@@ -38,6 +38,7 @@ export const BenefitsWrapper = styled.div`
   @media screen and (max-width: ${(props) => props.theme.breakpoints.mobile}) {
     flex-direction: column;
     padding: 0;
+    gap: 0;
   }
 `;
 
@@ -74,5 +75,8 @@ export const BenefitsCard = styled.div`
   @media screen and (max-width: ${(props) => props.theme.breakpoints.mobile}) {
     width: 100%;
     margin-bottom: 0.8rem;
+    &:hover {
+      transform: translatey(0);
+    }
   }
 `;
