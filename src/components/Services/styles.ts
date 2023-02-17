@@ -49,6 +49,7 @@ export const ServicesWrapper = styled.div`
   align-items: center;
   justify-content: space-around;
   flex-direction: row;
+  flex-wrap: wrap;
   padding: 0.8rem;
 
   @media screen and (max-width: ${(props) => props.theme.breakpoints.mobile}) {

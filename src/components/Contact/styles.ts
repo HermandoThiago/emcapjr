@@ -59,6 +59,16 @@ export const ContactForm = styled.form`
     }
   }
 
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    cursor: pointer;
+    color: ${(props) => props.theme.white};
+    padding: 1rem 0;
+  }
+
   button {
     width: 100%;
     color: #fff;

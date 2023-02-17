@@ -1,6 +1,7 @@
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as zod from "zod";
+import { WhatsappLogo } from "phosphor-react";
 import emailjs from "@emailjs/browser";
 import { Container } from "../Container";
 import { ContactContainer, ContactForm } from "./styles";
@@ -107,6 +108,13 @@ export function Contact() {
             />
           </div>
           <button type="submit">Enviar</button>
+          <a
+            href="https://api.whatsapp.com/send?phone=5584996036572"
+            target="_blank"
+          >
+            Ou entre em contato pelo Whatsapp{" "}
+            <WhatsappLogo size={32} color="#25d366" />{" "}
+          </a>
         </ContactForm>
       </Container>
     </ContactContainer>

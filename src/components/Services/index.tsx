@@ -1,4 +1,10 @@
-import { Scales, Buildings, Wallet, Storefront } from "phosphor-react";
+import {
+  Scales,
+  Buildings,
+  Wallet,
+  Storefront,
+  Calculator,
+} from "phosphor-react";
 import { ServicesContainer, ServicesWrapper, ServicesCard } from "./styles";
 import { Container } from "../Container";
 
@@ -17,17 +23,22 @@ export function Services() {
           </ServicesCard>
           <ServicesCard>
             <Buildings size={50} />
-            <p>Abertura de MEIs</p>
+            <p>Assessoria ao MEI</p>
             <a href="#contact">Contratar serviço</a>
           </ServicesCard>
           <ServicesCard>
             <Wallet size={50} />
-            <p>Gestão financeira</p>
+            <p>Consultoria financeira</p>
             <a href="#contact">Contratar serviço</a>
           </ServicesCard>
           <ServicesCard>
             <Storefront size={50} />
-            <p>Análise gerencial</p>
+            <p>Consultoria de custos e precificação</p>
+            <a href="#contact">Contratar serviço</a>
+          </ServicesCard>
+          <ServicesCard>
+            <Calculator size={50} />
+            <p>Assessoria contábil</p>
             <a href="#contact">Contratar serviço</a>
           </ServicesCard>
         </ServicesWrapper>

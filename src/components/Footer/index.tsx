@@ -24,10 +24,10 @@ export function Footer() {
           <About>
             <h4>Emcap Jr</h4>
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.
+              Nossa missão é Prestar assessoria e consultoria na área contábil,
+              com foco na excelência dos serviços prestados e satisfação dos
+              clientes, bem como, desenvolver o acadêmico de Ciências Contábeis
+              por meio de projetos e gestões.
             </p>
             <SocialIcons>
               <a href="https://www.facebook.com/emcapjr" target="_blank">
@@ -51,9 +51,10 @@ export function Footer() {
             <h4>Serviços</h4>
             <ul>
               <li>Imposto de renda</li>
-              <li>Abertura de MEIs</li>
-              <li>Gestão Financeira</li>
-              <li>Análise Gerencial</li>
+              <li>Assessoria ao MEI</li>
+              <li>Consultoria financeira</li>
+              <li>Consultoria de custos e precificação</li>
+              <li>Assessoria contábil</li>
             </ul>
           </Services>
           <Contact>

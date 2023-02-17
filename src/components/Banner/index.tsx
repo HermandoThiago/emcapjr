@@ -7,7 +7,7 @@ export function Banner() {
       <p>Consultoria contábil e Financeira</p>
       <h1>Simplique a gestão financeira e contábil da sua empresa</h1>
       <p>
-        Atuamos desde 2008 com prestação de serviços relacionados a consultoria
+        Atuamos desde 2014 com prestação de serviços relacionados a consultoria
         financeira e Contábil.
       </p>
       <a href="#contact">

@@ -29,8 +29,11 @@ export const BenefitsWrapper = styled.div`
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
   padding: 0.8rem;
+  gap: 1.2rem;
 
   @media screen and (max-width: ${(props) => props.theme.breakpoints.mobile}) {
     flex-direction: column;
@@ -39,7 +42,7 @@ export const BenefitsWrapper = styled.div`
 `;
 
 export const BenefitsCard = styled.div`
-  width: 32%;
+  width: 30%;
   padding: 2.4rem 2.4rem;
   text-align: left;
   border-radius: 8px;
@@ -57,7 +60,7 @@ export const BenefitsCard = styled.div`
 
   h3 {
     color: #eea918;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     margin-bottom: 0.8rem;
     font-weight: 700;
   }
