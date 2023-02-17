@@ -47,10 +47,11 @@ export const ServicesWrapper = styled.div`
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
   padding: 0.8rem;
+  gap: 1.2rem;
 
   @media screen and (max-width: ${(props) => props.theme.breakpoints.mobile}) {
     flex-direction: column;
@@ -59,7 +60,7 @@ export const ServicesWrapper = styled.div`
 `;
 
 export const ServicesCard = styled.div`
-  width: 22%;
+  width: 30%;
   text-align: center;
   padding: 2.4rem 0.8rem;
   border-radius: 8px;

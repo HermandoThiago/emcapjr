@@ -33,7 +33,7 @@ export function Services() {
           </ServicesCard>
           <ServicesCard>
             <Storefront size={50} />
-            <p>Consultoria de custos e precificação</p>
+            <p>Custos e precificação</p>
             <a href="#contact">Contratar serviço</a>
           </ServicesCard>
           <ServicesCard>
