@@ -2,7 +2,6 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as zod from "zod";
 import { WhatsappLogo } from "phosphor-react";
-import emailjs from "@emailjs/browser";
 import { Container } from "../Container";
 import { ContactContainer, ContactForm } from "./styles";
 
@@ -32,7 +31,7 @@ export function Contact() {
     },
   });
 
-  function handleSendEmail(data: ContactFormData) {
+  async function handleSendEmail(data: ContactFormData) {
     let template = {
       about: data.about,
       company: data.company,
@@ -41,14 +40,19 @@ export function Contact() {
       content: data.content,
     };
 
-    emailjs.send("", "", template).then(
-      function (response) {
-        console.log("SUCCESS!", response.status, response.text);
+    await fetch("https://formsubmit.co/ajax/emcapjr@gmail.com", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
       },
-      function (error) {
-        console.log("FAILED...", error);
-      }
-    );
+      body: JSON.stringify({
+        nome: `${template.company} - ${template.cpfOrCnpj}`,
+        _subject: `${template.about}`,
+        email: `email: ${template.email}`,
+        mensagem: `${template.content}`,
+      }),
+    });
 
     reset();
   }
