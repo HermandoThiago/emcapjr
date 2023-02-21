@@ -10,11 +10,18 @@ import {
   BannerContainer,
   ProgrammingContainer,
   ProgrammingWrapper,
+  MinicursosContainer,
+  MinicurosWrapper,
+  MinicursoCard,
+  ImageDrop,
 } from "./styles";
 
 import { useModalContext } from "../../contexts/Modal";
 
 import encucLogo from "../../assets/encuc-logo.png";
+import rodrigo from "../../assets/minicursos/rodrigo.jpeg";
+import aldrich from "../../assets/minicursos/aldrich.jpeg";
+import marconi from "../../assets/minicursos/marconi.jpeg";
 
 export function Encuc() {
   const { openDrawer } = useModalContext();
@@ -199,6 +206,45 @@ export function Encuc() {
           </div>
         </ProgrammingWrapper>
       </ProgrammingContainer>
+      <MinicursosContainer>
+        <h2>Minicursos</h2>
+        <MinicurosWrapper>
+          <MinicursoCard>
+            <ImageDrop img={rodrigo} />
+            <div>
+              <p>
+                <strong>Tema: </strong> Conhecendo o E-Social
+              </p>
+              <p>
+                <strong>Ministrante: </strong> Rodrigo de Freitas
+              </p>
+            </div>
+          </MinicursoCard>
+          <MinicursoCard>
+            <ImageDrop img={aldrich} />
+            <div>
+              <p>
+                <strong>Tema: </strong> Inteligência Artificial e Office na
+                Contabilidade 4.0.
+              </p>
+              <p>
+                <strong>Ministrante: </strong> Aldrich Heuser
+              </p>
+            </div>
+          </MinicursoCard>
+          <MinicursoCard>
+            <ImageDrop img={marconi} />
+            <div>
+              <p>
+                <strong>Tema: </strong> Imposto de Renda Pessoa física
+              </p>
+              <p>
+                <strong>Ministrante: </strong> Auri Marconi
+              </p>
+            </div>
+          </MinicursoCard>
+        </MinicurosWrapper>
+      </MinicursosContainer>
     </ModalProvider>
   );
 }

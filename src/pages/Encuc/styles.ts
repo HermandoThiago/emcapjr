@@ -175,3 +175,87 @@ export const ProgrammingWrapper = styled.div`
     }
   }
 `;
+
+export const MinicursosContainer = styled.section`
+  width: 100%;
+
+  padding: 7.5rem 2.8rem;
+  background: #030f20;
+  color: ${(props) => props.theme.colors.neutral};
+
+  h2 {
+    color: #eea918;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1.8rem;
+  }
+`;
+
+export const MinicurosWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  flex-direction: row;
+  padding: 0.8rem;
+  gap: 1.2rem;
+
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    flex-direction: column;
+    padding: 0;
+    gap: 0;
+  }
+`;
+
+export const MinicursoCard = styled.div`
+  width: 30%;
+  height: 430px;
+  text-align: left;
+  border-radius: 8px;
+  cursor: pointer;
+  background: ${(props) => props.theme.colors["gray-200"]};
+  transition: all 0.2s;
+
+  div {
+    width: 100%;
+    padding: 1.2rem 0.8rem;
+
+    img {
+      max-width: 100%;
+      max-height: 150px;
+    }
+
+    p {
+      margin-bottom: 0.8rem;
+      font-size: 1.1rem;
+    }
+  }
+
+  &:hover {
+    transform: translatey(-15px);
+  }
+
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    width: 100%;
+    margin-bottom: 0.8rem;
+
+    &:hover {
+      transform: translatey(0);
+    }
+  }
+`;
+
+export interface ImageProps {
+  img: string;
+}
+
+export const ImageDrop = styled.div<ImageProps>`
+  width: 100%;
+  height: 300px;
+  background-image: url(${(props) => props.img});
+  background-repeat: no-repeat;
+  background-size: cover;
+`;
