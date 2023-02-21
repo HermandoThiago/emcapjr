@@ -32,8 +32,13 @@ export const NavigationContainer = styled.div`
   padding: 1.4rem 0;
   color: ${(props) => props.theme["blue-600"]};
 
-  h2 {
+  div {
     cursor: pointer;
+    width: 190px;
+
+    img {
+      max-width: 100%;
+    }
   }
 
   nav {

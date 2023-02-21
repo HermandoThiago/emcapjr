@@ -22,6 +22,9 @@ export function MobileDrawer() {
           Serviços
         </a>
         <a href="#contact" onClick={closeDrawer}>
+          Encuc
+        </a>
+        <a href="#contact" onClick={closeDrawer}>
           Consulte um especialista
         </a>
       </nav>

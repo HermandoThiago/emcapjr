@@ -3,6 +3,7 @@ import { Container } from "../Container";
 import { HeadContainer, NavigationContainer, BurguerMenu } from "./styles";
 import { useModalContext } from "../../contexts/Modal";
 import { MobileDrawer } from "../MobileDrawer";
+import logoEmcap from "../../assets/logo-emcap.png";
 
 export function Header() {
   const { openDrawer } = useModalContext();
@@ -13,12 +14,15 @@ export function Header() {
     <HeadContainer>
       <Container>
         <NavigationContainer>
-          <h2>EMCAP JR</h2>
+          <div>
+            <img src={logoEmcap} alt="" />
+          </div>
           <nav>
             <a href="#">Home</a>
             <a href="#about">Sobre</a>
             <a href="#benefits">Vantagens</a>
             <a href="#services">Serviços</a>
+            <a href="#contact">Encuc 2023</a>
             <a href="#contact">Consulte um especialista</a>
           </nav>
           <BurguerMenu>
