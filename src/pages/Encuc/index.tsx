@@ -1,6 +1,6 @@
 import { List } from "phosphor-react";
 import { Modal } from "../../components/Modal";
-import { ModalProvider } from "../../contexts/Modal";
+import { ModalProvider, useModalContext } from "../../contexts/Modal";
 import { Container } from "../../components/Container";
 import { MobileDrawer } from "../../components/MobileDrawer";
 import {
@@ -15,8 +15,6 @@ import {
   MinicursoCard,
   ImageDrop,
 } from "./styles";
-
-import { useModalContext } from "../../contexts/Modal";
 
 import encucLogo from "../../assets/encuc-logo.png";
 import rodrigo from "../../assets/minicursos/rodrigo.jpeg";
@@ -38,7 +36,7 @@ export function Encuc() {
         <Container>
           <NavigationContainer>
             <div>
-              <img src={encucLogo} alt="" />
+              <img src={encucLogo} />
             </div>
             <nav>
               <a href="#">Sobre</a>
