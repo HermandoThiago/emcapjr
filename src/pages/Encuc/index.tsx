@@ -22,6 +22,9 @@ import encucLogo from "../../assets/encuc-logo.png";
 import rodrigo from "../../assets/minicursos/rodrigo.jpeg";
 import aldrich from "../../assets/minicursos/aldrich.jpeg";
 import marconi from "../../assets/minicursos/marconi.jpeg";
+import sanailton from "../../assets/palestras/sanailton.jpg";
+import radna from "../../assets/palestras/radna.jpeg";
+import perpetua from "../../assets/palestras/perpetua.jpeg";
 
 export function Encuc() {
   const { openDrawer } = useModalContext();
@@ -42,7 +45,9 @@ export function Encuc() {
               <a href="#programacao">Programação</a>
               <a href="#minicourses">Minicursos</a>
               <a href="#talking">Palestras</a>
-              <a href="#submission">Inscrição</a>
+              <a href="https://forms.gle/o6cVCeEq2B3GMyFk7" target="_blank">
+                Inscrição
+              </a>
             </nav>
             <BurguerMenu>
               <List size={22} onClick={openDrawerMobile} />
@@ -73,9 +78,14 @@ export function Encuc() {
               </p>
               <p>
                 Valor promocional: R$ 30,00 (estudante) e 35,00 (profissional) -
-                (válido até 28/02)
+                (válido até 03/03)
               </p>
-              <p>Para realizar a inscrição acesse: [Inscrições]</p>
+              <p>
+                Para realizar a inscrição acesse:{" "}
+                <a href="https://forms.gle/o6cVCeEq2B3GMyFk7" target="_blank">
+                  [Inscrições]
+                </a>
+              </p>
             </div>
           </div>
 
@@ -87,7 +97,12 @@ export function Encuc() {
                 <time>23/02</time> á<time>06/03</time>.
               </p>
               <p>Para mais informações acesse o edital abaixo.</p>
-              <a href="">[Edital]</a>
+              <a
+                href="https://docs.google.com/document/d/1Z-aL4spx_UmXB-eTmeLEcjJ-y0apO7GD/edit?usp=sharing&ouid=108322270064061522571&rtpof=true&sd=true"
+                target="_blank"
+              >
+                [Edital]
+              </a>
             </div>
           </div>
 
@@ -206,7 +221,7 @@ export function Encuc() {
           </div>
         </ProgrammingWrapper>
       </ProgrammingContainer>
-      <MinicursosContainer>
+      <MinicursosContainer id="minicourses">
         <h2>Minicursos</h2>
         <MinicurosWrapper>
           <MinicursoCard>
@@ -240,6 +255,50 @@ export function Encuc() {
               </p>
               <p>
                 <strong>Ministrante: </strong> Auri Marconi
+              </p>
+            </div>
+          </MinicursoCard>
+        </MinicurosWrapper>
+      </MinicursosContainer>
+      <MinicursosContainer bg="color" id="talking">
+        <h2>Palestras</h2>
+        <MinicurosWrapper>
+          <MinicursoCard>
+            <ImageDrop img={radna} />
+            <div>
+              <p>
+                <strong>Tema: </strong> Consultoria contábil: desafios e
+                oportunidades da contabilidade
+              </p>
+              <p>
+                <strong>Palestrante: </strong> Radna Medeiros - Conselheira do
+                CRC/RN
+              </p>
+            </div>
+          </MinicursoCard>
+          <MinicursoCard>
+            <ImageDrop img={perpetua} />
+            <div>
+              <p>
+                <strong>Tema: </strong> Recuperação Fiscal
+              </p>
+              <p>
+                <strong>Ministrante: </strong> Perpétua Moura - Conselheira do
+                CRC/RN
+              </p>
+            </div>
+          </MinicursoCard>
+          <MinicursoCard>
+            <ImageDrop img={sanailton} />
+            <div>
+              <p>
+                <strong>Tema: </strong> Contabilidade como ferramenta contra a
+                corrupção
+              </p>
+              <p>
+                <strong>Ministrante: </strong> Sanailton Dias - Professor da
+                FACEM - UERN e Especialista em Gestão Pública, licitações e
+                controladoria.
               </p>
             </div>
           </MinicursoCard>

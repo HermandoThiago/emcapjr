@@ -176,12 +176,18 @@ export const ProgrammingWrapper = styled.div`
   }
 `;
 
-export const MinicursosContainer = styled.section`
+export interface MinicurosWrapper {
+  bg?: string;
+}
+
+export const MinicursosContainer = styled.section<MinicurosWrapper>`
   width: 100%;
 
   padding: 7.5rem 2.8rem;
   background: #030f20;
   color: ${(props) => props.theme.colors.neutral};
+
+  background-color: ${(props) => (props.bg ? props.theme.white : "")};
 
   h2 {
     color: #eea918;
@@ -212,12 +218,14 @@ export const MinicurosWrapper = styled.div`
 
 export const MinicursoCard = styled.div`
   width: 30%;
-  height: 430px;
+  height: 100%;
+  min-height: 500px;
   text-align: left;
   border-radius: 8px;
   cursor: pointer;
   background: ${(props) => props.theme.colors["gray-200"]};
   transition: all 0.2s;
+  border-radius: 8px;
 
   div {
     width: 100%;
@@ -258,4 +266,5 @@ export const ImageDrop = styled.div<ImageProps>`
   background-image: url(${(props) => props.img});
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 8px;
 `;
