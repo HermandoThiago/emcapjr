@@ -21,8 +21,8 @@ export function MobileDrawer() {
         <a href="#services" onClick={closeDrawer}>
           Serviços
         </a>
-        <a href="#contact" onClick={closeDrawer}>
-          Encuc
+        <a href="/encuc" onClick={closeDrawer}>
+          Encuc 2023
         </a>
         <a href="#contact" onClick={closeDrawer}>
           Consulte um especialista
