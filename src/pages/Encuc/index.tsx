@@ -75,8 +75,8 @@ export function Encuc() {
                 De <time>27/02</time> a <time>14/03</time>
               </p>
               <p>
-                Valor promocional: R$ 30,00 (estudante) e 35,00 (profissional) -
-                (válido até 03/03)
+                R$ 35,00 (estudante) e R$ 40,00 (profissional) - válido até
+                14/03 18:30
               </p>
               <p>
                 Para realizar a inscrição acesse:{" "}
