@@ -72,11 +72,11 @@ export function Encuc() {
             <h3>Inscrições</h3>
             <div>
               <p>
-                De <time>27/02</time> a <time>14/03</time>
+                De <time>09/05</time> a <time>23/05</time>
               </p>
               <p>
                 R$ 35,00 (estudante) e R$ 40,00 (profissional) - válido até
-                14/03 18:30
+                23/05 18:30
               </p>
               <p>
                 Para realizar a inscrição acesse:{" "}
@@ -87,28 +87,11 @@ export function Encuc() {
             </div>
           </div>
 
-          <div id="trabalhos">
-            <h3>Submissão de trabalho</h3>
-            <div>
-              <p>
-                As inscrições para a submissão de trabalhos serão do dia{" "}
-                <time>23/02</time> á<time>06/03</time>.
-              </p>
-              <p>Para mais informações acesse o edital abaixo.</p>
-              <a
-                href="https://docs.google.com/document/d/1Z-aL4spx_UmXB-eTmeLEcjJ-y0apO7GD/edit?usp=sharing&ouid=108322270064061522571&rtpof=true&sd=true"
-                target="_blank"
-              >
-                [Edital]
-              </a>
-            </div>
-          </div>
-
           <div id="eventos">
             <h3>Eventos</h3>
             <div>
               <p>
-                Dia <time>14/03</time>
+                Dia <time>23/05</time>
               </p>
               <p>18:30 - 19:30</p>
               <p>Credenciamento dos participantes</p>
@@ -132,7 +115,7 @@ export function Encuc() {
             </div>
             <div>
               <p>
-                Dia <time>15/03</time> e <time>16/03</time>
+                Dia <time>24/05</time> e <time>25/05</time>
               </p>
               <p>19:00 – 22:00</p>
               <p>Minicursos</p>
@@ -140,7 +123,7 @@ export function Encuc() {
             </div>
             <div>
               <p>
-                Dia <time>17/03</time>
+                Dia <time>26/05</time>
               </p>
               <p>14:00 - 18:00 Apresentação de trabalhos</p>
               <p>Local: Salas de Contábeis</p>
@@ -170,7 +153,7 @@ export function Encuc() {
           </div>
 
           <div id="minicursos">
-            <h3>Minicursos - dia 15/03 e 16/03</h3>
+            <h3>Minicursos - dia 24/05 e 25/05</h3>
             <div>
               <p>Minicurso 1 – Conhecendo o E-Social</p>
               <p>Ministrante: Rodrigo de Freitas</p>
