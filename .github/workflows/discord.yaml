@@ -9,12 +9,12 @@ jobs:
   send-notification:
     runs-on: ubuntu-latest
 
-  steps:
-    - name: Checkout do repositório
-      uses: actions/checkout@v2
+    steps:
+      - name: Checkout do repositório
+        uses: actions/checkout@v2
 
-    - name: Enviar notificação para o Discord
-      uses: appleboy/discord-action@v1.0.0
-      with:
-        webhook_url: ${{ secrets.DISCORD_WEBHOOK_URL }}
-        message: "update branch main"
+      - name: Enviar notificação para o Discord
+        uses: appleboy/discord-action@v1.0.0
+        with:
+          webhook_url: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          message: "update branch main"
