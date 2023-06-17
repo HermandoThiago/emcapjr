@@ -22,7 +22,7 @@ export function Header() {
             <a href="#about">Sobre</a>
             <a href="#benefits">Vantagens</a>
             <a href="#services">Serviços</a>
-            <a href="/encuc">Encuc 2023</a>
+            {/* <a href="/encuc">Encuc 2023</a> */}
             <a href="#contact">Consulte um especialista</a>
           </nav>
           <BurguerMenu>
